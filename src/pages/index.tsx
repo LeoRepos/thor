@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import LineHeader from '@/components/LineHeader'
+import Header from '@/components/Header'
+import { Page, PageContainer, PageFullWidthContent } from './themes/globalStyle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +17,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <LineHeader />
-          
+
+        <PageFullWidthContent>
+            <LineHeader />
+        </PageFullWidthContent>
+
+        <PageContainer>
+          <Page>
+            <Header />
+            
+          </Page>
+        </PageContainer>
+      
       </main>
     </>
   )

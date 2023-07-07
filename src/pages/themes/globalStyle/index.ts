@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     /* Firefox */
     * {
         scrollbar-width: auto;
-        scrollbar-color: #5d3b81 transparent;
+        scrollbar-color: #4D2952 transparent;
     }
 
     /* Chrome, Edge, and Safari */
@@ -26,26 +26,23 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     *::-webkit-scrollbar-thumb {
-        background-color: #5d3b81;
+        background-color: #4D2952;
         border-radius: 10px;
         border: 3px solid transparent;
     }
 `;
 
-export const PageMainContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 2rem;
-    background-color: #f6f6f6;
+export const PageFullWidthContent = styled.div`
+    max-width: 100vw;
 `;
 
 export const PageContainer = styled.div`
-    display: flex;
     max-width: 100vw;
-    max-height: 100vh;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 `;
 
-export const Page = styled.div``;
+export const Page = styled.div`
+    width: 1430px;
+`;
