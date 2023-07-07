@@ -4,7 +4,9 @@ const Header = () => {
 
     return (
         <S.HeaderContainer>
-            ...
+            <S.HeaderLogo>
+                ..
+            </S.HeaderLogo>
         </S.HeaderContainer>
     );
 };
